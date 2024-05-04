@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    /* overflow: hidden; */
+    background-color: #f0f4f5;
+    margin: auto;
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 15%;
+}
+
+nav img{
+    width: 150px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    text-decoration: none;
+    margin-right:50px;
+    font-size: 18px;
+    font-weight: 600;
+}
+ nav ul li:first-child{
+    font-family: 700;
+    color:#20bc7e;
+ }
+
+ a{
+    text-decoration: none;
+    color:black;
+ }
+
+ main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+ }
+ main section{
+    width: 50%;
+ }
+
+ .left-section{
+    position: relative;
+    margin-left:5%;
+ }
+ .top-angle{
+    width: 25px;
+ }
+
+ .left-section h1{
+    font-size:70px;
+    /* font-weight: 600; */
+ }
+
+ .left-section p{
+    color:#7c7c7c;
+    font-size: 18px;
+    margin: 20px 0;
+ }
+ .bottom-angle{
+    width: 25px;
+    position: absolute;
+    right: 25px;
+ }
+
+ .stethoscope{
+    position:absolute;
+    width: 90%;
+    top:-60px;
+    right: -25px;
+    z-index:-1;
+ }
+
+ .mouse{
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 30px;
+ }
+ .left-section button{
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 40px;
+    background-color: #20bc7e;
+    font-size: 25px;
+    font-weight: 700;
+ }
+
+ .greenBox, .yellowBox{
+    position: absolute;
+    right: 0;
+ }
+ .greenBox{
+    width: 35%;
+    bottom: 30px;
+ }
+
+ .yellowBox{
+    width: 30%;
+    bottom: 50px;
+ }
+
+ .doctor{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    height:90%;
+ }
+
+.About{
+    height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.center{
+   width: 50%;
+   align-items: center;
+}
+.center h2{
+    margin-bottom: 20x;
+    color:#20bc7e;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.center p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.achievement{
+    display:flex;
+    gap:50px;
+    text-align: center;
+    /* margin-top:50px; */
+}
+.achievement-card{
+    width:150px;
+    height:50px;
+    border-radius:10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px red;
+    flex-direction: column;
+    margin-top:5%;
+}
+
+.achievement-card span{
+    color:#20bc7e;
+    font-size: 18px;
+    font-weight: 500;
+}
+.achievement-card p{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login{
+    height:360px;
+    width:290px;
+    align-items: center;
+   position: absolute;
+   left:40%;
+   margin-top: 10%;
+   border-radius: 10px;
+   padding: 25px;
+    background-color: black;
+    color: white;
+}
+
+.login h2{
+    text-align: center;
+    width: 220px;
+    color:red;
+    background-color: white;
+    margin:2.5px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+form input{
+    width: 240px;
+    height: 35px;
+    background:transparent;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    border-bottom: 1px solid green;
+}
+ form input:focus{
+    outline:none;
+ }
+ ::placeholder{
+    color: white;
+    font-family: Arial;
+ }
+
+ .btn{
+    width: 240px;
+    height: 40px;
+    background-color: red;
+    border: white;
+    margin-top:30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border-radius: 10px;
+    color:white;
+ }
